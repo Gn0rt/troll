@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+    background: linear-gradient(90deg, #E178C5, #FFFDCB);
+    height: 100vh;
+}
+
+h1 {
+    margin-top: 100px;
+}
+
+.img-container img {
+    width: 300px;
+}
+
+.button-contain {
+    display: flex;
+    /* position: relative; */
+
+
+}
+
+#yes {
+    position: absolute;
+    right: 50%;
+}
+
+#no {
+    z-index: 10;
+    transition: all .3s;
+    position: absolute;
+
+
+}
+
+.btn-container button {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    background: linear-gradient(90deg, #E178C5, #FFFDCB);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: #FF8E8F;
+    z-index: 11;
+    display: none;
+    animation: fadeIn 0.3s;
+
+}
+
+.modal.open {
+    display: block;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px 20px 10px 10px;
+    cursor: pointer;
+}
+
+
+.modal-img img {
+    width: 500px;
+
+}
+
+.modal-text {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
